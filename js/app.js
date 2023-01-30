@@ -10,6 +10,7 @@ let seattleStore = {
   min: 23,
   maxCust: 65,
   avg: 6.3,
+  dailytotal:0,
   randomCust: function () {
     return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
   },
@@ -24,15 +25,15 @@ let seattleStore = {
   salesByHour: [],
   salesNumber: function () {
     for (let i = 0; i < hours.length; i++) {
-      this.salesByHourAr.push(
+      this.salesByHourArray.push(cookiesSoldThisHour
         this.randomSale());
     }
   },
   totalSale: function () {
     let total = 0;
     for (let k = 0; k < this.salesByHour.length; k++) {
-      // console.log(this.salesByHourAr[k]);
-      total += this.salesByHourAr[k];
+      // console.log(this.salesByHourArray[k]);
+      total += this.salesByHourArray[k];
     }
     console.log(total);
     return total;
@@ -40,27 +41,32 @@ let seattleStore = {
 
 };
 console.log(seattleStore.salesNumber());
-console.log(seattleStore.salesByHourAr);
+console.log(seattleStore.salesByHourArray);
 console.log(seattleStore.randomCust());
 console.log(` ${seattleStore.randomSale()} is randomSale`);
 console.log(`total sales ${seattleStore.totalSale()}`);
 
-let newDiv = document.getElementById('div'); //located the div on html, so Store name can be listed under
+let newDiv = document.getElementById('div'); 
+//located the div on html, so Store name can be listed under
 // let newBody = document.body;
 // console.log(newBody);
-let seattleP = document.createElement('p'); //created h2 for store name
-seattleP.textContent = seattleStore.location; //pull the store name from obj
-newDiv.appendChild(seattleP); //add store nme under div
+
+let ulElement = document.createElement('p'); //create the element
+ulElement.textContent = seattleStore.location; //pull the store name from obj
+newDiv.appendChild(ulElement); //add store name under div
 
 // let newLi = document.getElementById('li');
 
 // print list
-for (let j = 0; j < hours.length; j++) {
-  let seattleLi = document.createElement('li');
-  seattleLi.textContent = `${hours[j]}: ${seattleStore.salesByHourAr[j]} cookies`;
-  seattleP.appendChild(seattleLi);
+for (let i = 0; i < hours.length; i++) {
+  let liElement = document.createElement('li');
+  liElement.textContent = `${hours[i]}: ${seattleStore.salesByHourArray[i]} cookies`;
+  ulElement.appendChild(liElement);
 }
 
-let seattleLiTotal = document.createElement('li');
-seattleLiTotal.textContent = `Total: ${seattleStore.totalSale()} cookies`;
-seattleP.appendChild(seattleLiTotal);
+//window into the DOM
+//using ID seattleSales
+
+let salesContainer = document.createElement('li');
+salesContainer.textContent = `Total: ${seattleStore.totalSale()} cookies`;
+ulElement.appendChild(salesContainer);
