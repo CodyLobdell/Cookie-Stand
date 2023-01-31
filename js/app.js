@@ -47,7 +47,7 @@ function tableHeader() {
     row1.appendChild(thElem);
   }
   let totalLocation = document.createElement('th');
-  totalLocation.innerText = 'Daily Totals';
+  totalLocation.innerText = 'Daily Location Totals';
   row1.appendChild(totalLocation);
 
 }
