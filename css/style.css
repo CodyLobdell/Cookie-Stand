@@ -129,11 +129,16 @@ article section {
 }
 
 #shirt {
-  height: 400px;
-  width: 480px;
+  height: 300px;
+  width: 300px;
 }
 
 #chinook {
   height: 70px;
   width: 200px;
+}
+
+#salmon {
+  height: 50;
+  width: 150;
 }
