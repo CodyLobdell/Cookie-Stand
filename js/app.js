@@ -10,6 +10,7 @@ let Dubai = new City('Dubai', 11, 38, 3.7);
 let Paris = new City('Paris', 20, 38, 2.3);
 let Lima = new City('Lima', 2, 16, 4.6);
 // push cities to array
+
 allStores.push(Seattle, Tokyo, Dubai, Paris, Lima);
 
 // Hours that stores are open
@@ -38,9 +39,9 @@ function renderAll() {
 function tableHeader() {
   let row1 = document.createElement('tr');
   cityTableBody.appendChild(row1);
-  let cityHead = document.createElement('th');
-  cityHead.innerText = 'City Name';
-  row1.appendChild(cityHead);
+  let cityHeader = document.createElement('th');
+  cityHeader.innerText = 'City Name';
+  row1.appendChild(cityHeader);
   for (let i = 0; i < hours.length; i++) {
     let thElem = document.createElement('th');
     thElem.innerText = hours[i];
