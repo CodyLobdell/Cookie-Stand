@@ -154,8 +154,3 @@ function renderBottomRow() {
 }
 
 renderBottomRow();
-
-
-//get data from a  form
-
-let cookieForm = document.querySelector('form');

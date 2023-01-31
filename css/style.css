@@ -64,7 +64,7 @@ p {
 }
 
 main {
-  background-color: rgb(115, 163, 108);
+  background-color: rgb(82, 105, 77);
   width: 960px;
   margin: 30px auto 0;
   display: flex;
@@ -99,7 +99,7 @@ main article a {
 }
 
 main article a:hover{
-  background-color: rgba(146, 121, 31, 0.584);
+  background-color: rgba(114, 38, 46, 0.584);
   transition-duration: 350ms;
 }
 
@@ -124,7 +124,7 @@ article section {
 }
 
 #frostedCookie {
-  height: 375px;
+  height: 175px;
   width: 300px;
 }
 
