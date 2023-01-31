@@ -106,7 +106,7 @@ let lima = new Store('Lima', 2, 16, 4.6);
 lima.render();
 
 
-let storeList = [seattle, tokyo, dubai,paris,lima];
+let storeList = [seattle, tokyo, dubai, paris, lima];
 
 
 let totalSalesByHr = [];
