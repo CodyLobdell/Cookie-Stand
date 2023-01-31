@@ -126,30 +126,7 @@ City.prototype.render = function () {
   }
 };
 
-function handleSubmit(event) {
-  event.preventDefault();
-
-  let cityName = event.target.cityName.value;
-  let minimumCus = event.target.minimumCus.value;
-  let maximumCus = event.target.maximumCus.value;
-  let aveCookie = event.target.aveCookie.value;
-
-  let newCity = new City(cityName, minimumCus, maximumCus, aveCookie);
-
-  storeNames.push(newCity);
-  newCity.getCookiesSold();
-  newCity.render();
-  document.getElementById('tableFooter').remove();
-  tableFooter();
-}
-
-// call functions
-
 tableHeader();
 hourlyTotal = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 renderAll();
 tableFooter();
-
-// function that is called for pushing data to a specific area.
-
-cities.addEventListener('submit', handleSubmit);
