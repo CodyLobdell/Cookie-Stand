@@ -1,16 +1,139 @@
 
-table, td, th {
-  border: 1px solid rgb(112, 158, 165);
+* {
+  box-sizing: border-box;
 }
-table{
-  margin: 1rem;
+body {
+  background-color: rgb(198, 126, 81);
 }
-td, th {
-  padding: 1rem;
+header {
+  background-color: #444;
+  
 }
-thead th {
-  font-weight: bold;
+
+header div {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  width: 960px;
+  margin: auto;
 }
-tfoot{
-  background-color: rgba(46, 93, 122, 0.1);
+
+nav{
+  display: flex;
+  width: 960px;
+  margin:auto;
+
+  
+}
+ 
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  height: 70px;
+}
+
+li {
+  float: left;
+  width: 200px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+h3 {
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 35px;
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+  background-color: rgb(115, 163, 108);
+  width: 960px;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+footer {
+  background-color: rgba(139, 77, 54, 0.667);
+  height: 50px;
+}
+
+main img {
+  margin-bottom: 30px;
+}
+
+article {
+  width: 450px;
+  height: 400px;
+}
+
+main article a {
+  color: white;
+  padding: 15px 30px;
+  background-color: #333333;
+  border-radius: 15px;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  width:max-content;
+
+}
+
+main article a:hover{
+  background-color: rgba(146, 121, 31, 0.584);
+  transition-duration: 350ms;
+}
+
+article section {
+  height: 309px;
+  overflow: auto;
+}
+
+#family {
+  height: 450px;
+  width: 960px;
+}
+
+#fish {
+  height: 375px;
+  width: 300px;
+}
+
+#cutter {
+  height: 375px;
+  width: 300px;
+}
+
+#frostedFish {
+  height: 375px;
+  width: 300px;
+}
+
+#shirt {
+  height: 400px;
+  width: 480px;
+}
+
+#chinook {
+  height: 70px;
+  width: 200px;
 }

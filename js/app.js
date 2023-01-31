@@ -23,7 +23,7 @@ let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '
 
 // DOM for cities and tbody
 
-let cities = document.getElementById('cities');
+let Cities = document.getElementById('Cities');
 
 
 let cityTableHead = document.querySelector('thead');
