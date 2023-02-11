@@ -124,10 +124,10 @@ function renderBottomRow() {
     for (let k = 0;k < storeList.length;k++){
       totalHr += storeList[k].salesNoByHrAr[j];
     }
-    totalSalesByHr.push(totalHr); 
+    totalSalesByHr.push(totalHr);
     console.log(totalHr);
   }
- 
+
   let topTable = document.querySelector('table');
   let bottomFoot = document.createElement('tfoot');
   let bottomTr = document.createElement('tr');
