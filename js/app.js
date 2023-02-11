@@ -30,7 +30,6 @@ function renderTopRow() {
 
 renderTopRow();
 
-// create constructor
 function Store(location, minCust, maxCust, avgSale) {
   this.location = location;
   this.minCust = minCust;
@@ -52,7 +51,6 @@ function Store(location, minCust, maxCust, avgSale) {
   this.totalSale = function () {
     let total = 0;
     for (let k = 0; k < this.salesNoByHrAr.length; k++) {
-      // console.log(this.salesNoByHrAr[k]);
       total += this.salesNoByHrAr[k];
     }
     console.log(total);
