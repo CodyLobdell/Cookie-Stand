@@ -60,9 +60,9 @@ function Store(location, minCust, maxCust, avgSale) {
   };
 }
 
-// below are for render:
+
 Store.prototype.render = function () {
-  this.calSalesNo(); //cal sales number and store result in this.salesNoByHrAr
+  this.calSalesNo();
   let selectTable = document.querySelector('table');
   let newHead = document.createElement('tbody');
   let newTr = document.createElement('tr');
@@ -121,7 +121,7 @@ function renderBottomRow() {
     totalFinalSales += storeList[m].totalSale();
   }
   console.log(totalFinalSales);
-  // just countinig numbers
+
   for(let j = 0; j < hours.length ; j++){
     let totalHr = 0;
     // count straight

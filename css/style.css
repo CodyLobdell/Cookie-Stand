@@ -1,16 +1,90 @@
+* {
+  box-sizing: border-box;
+}
 
-table, td, th {
-  border: 1px solid rgb(112, 158, 165);
+body {
+  background-color: rgb(249, 227, 188);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-table{
-  margin: 1rem;
+
+table {
+  width: 900px;
+  margin: auto;
+  background-color: rgb(155, 203, 189);
 }
-td, th {
-  padding: 1rem;
+
+table,
+th,
+td,
+tr,
+tbody,
+thead,
+tfoot {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px;
+  border-style: solid;
+  color: rgb(1, 0, 28);
+  padding: 5px 5px;
 }
-thead th {
+
+th {
   font-weight: bold;
+  color: rgb(0, 0, 0);
+  background-color: rgb(96, 232, 99);
 }
-tfoot{
-  background-color: rgba(46, 93, 122, 0.1);
+
+tfoot {
+  background-color: rgb(236, 128, 128);
+}
+
+h1 {
+  margin: 20px 20px;
+  text-align: center;
+  color: rgb(81, 177, 81);
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+footer a {
+  display: block;
+  /* margin: 50px 50px; */
+  text-align: center;
+  font-size: 30px;
+
+}
+
+/* td {
+color: black;
+} */
+
+form {
+
+  width: 500px;
+  margin: 50px auto;
+  border-style: solid;
+  border-color: rgb(124, 11, 7);
+  border-width: 5px;
+  padding: 10px;
+}
+
+fieldset {
+  border-style: dashed;
+  border-color: coral;
+  border-width: 2px;
+  margin: 15px;
+  /* width: 100%; */
+  padding: 20px;
+  /* margin-bottom: 1rem; */
+}
+
+legend {
+  color: darkred;
+  font-size: 30px;
+
+}
+
+label,
+input {
+  display: block;
 }
