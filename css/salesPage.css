@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:wheat;
+  font-family:'Times New Roman', Times, serif;
+}
+table {
+  width: 900px;
+  margin: auto;
+  background-color: rgb(205, 183, 213);
+}
+table, th, td, tr, tbody, thead, tfoot {
+  font-family: Helvetica, sans-serif;
+  border: 2px;
+  border-style: solid;
+  color: rgb(15, 28, 0);
+  padding: 5px 5px;
+}
+
+th {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(72, 106, 162);
+}
+
+tfoot {
+  background-color: rgb(231, 250, 135);
+}
+
+h1 {
+  margin: 20px 20px;
+  text-align: center;
+  color: darkgreen;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+footer a {
+display: block;
+  /* margin: 50px 50px; */
+  text-align: center;
+  font-size: 30px;
+
+}
+/* td {
+color: black;
+} */
+
+form {
+
+  width: 500px;
+  margin: 50px auto;
+  border-style: solid;
+  border-color: rgb(7, 124, 60);
+  border-width: 5px;
+  padding: 10px;
+}
+
+fieldset {
+  border-style: dashed;
+  border-color: coral;
+  border-width: 2px;
+  margin: 15px;
+  /* width: 100%; */
+  padding: 20px;
+  /* margin-bottom: 1rem; */
+}
+legend {
+  color: darkred;
+  font-size: 30px;
+
+}
+label, input {
+  display: block;
+}

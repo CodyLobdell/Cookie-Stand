@@ -73,6 +73,7 @@ main {
   align-items: flex-start;
 }
 footer {
+  flex-wrap: wrap;
   background-color: rgba(139, 77, 54, 0.667);
   height: 50px;
 }
@@ -129,6 +130,7 @@ article section {
 }
 
 #shirt {
+  margin: auto;
   height: 300px;
   width: 300px;
 }
@@ -139,6 +141,7 @@ article section {
 }
 
 #salmon {
-  height: 50;
-  width: 150;
+  margin-inline: auto;
+  height: 10;
+  width: 75;
 }
